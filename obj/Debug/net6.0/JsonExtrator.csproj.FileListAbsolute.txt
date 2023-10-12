@@ -1,0 +1,14 @@
+F:\Projetos\C#\JsonExtrator\bin\Debug\net6.0\JsonExtrator.exe
+F:\Projetos\C#\JsonExtrator\bin\Debug\net6.0\JsonExtrator.deps.json
+F:\Projetos\C#\JsonExtrator\bin\Debug\net6.0\JsonExtrator.runtimeconfig.json
+F:\Projetos\C#\JsonExtrator\bin\Debug\net6.0\JsonExtrator.dll
+F:\Projetos\C#\JsonExtrator\bin\Debug\net6.0\JsonExtrator.pdb
+F:\Projetos\C#\JsonExtrator\obj\Debug\net6.0\JsonExtrator.GeneratedMSBuildEditorConfig.editorconfig
+F:\Projetos\C#\JsonExtrator\obj\Debug\net6.0\JsonExtrator.AssemblyInfoInputs.cache
+F:\Projetos\C#\JsonExtrator\obj\Debug\net6.0\JsonExtrator.AssemblyInfo.cs
+F:\Projetos\C#\JsonExtrator\obj\Debug\net6.0\JsonExtrator.csproj.CoreCompileInputs.cache
+F:\Projetos\C#\JsonExtrator\obj\Debug\net6.0\JsonExtrator.dll
+F:\Projetos\C#\JsonExtrator\obj\Debug\net6.0\refint\JsonExtrator.dll
+F:\Projetos\C#\JsonExtrator\obj\Debug\net6.0\JsonExtrator.pdb
+F:\Projetos\C#\JsonExtrator\obj\Debug\net6.0\JsonExtrator.genruntimeconfig.cache
+F:\Projetos\C#\JsonExtrator\obj\Debug\net6.0\ref\JsonExtrator.dll
