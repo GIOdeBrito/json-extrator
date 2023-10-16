@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Text.Json;
@@ -9,7 +10,14 @@ namespace JsonExtrator
 {
 	internal class Start
 	{
-		public Start() { }
+		static Start ()
+		{
+			CultureInfo customCulture = new CultureInfo("pt-BR");
+			customCulture.NumberFormat.NumberDecimalSeparator = ".";
+
+			// Define a "cultura" customizada a ser usada
+			System.Threading.Thread.CurrentThread.CurrentCulture = customCulture;
+		}
 
 		public static void Extract ()
 		{
@@ -35,22 +43,32 @@ namespace JsonExtrator
 
 			Console.WriteLine();
 
+			string str_f = string.Empty;
+
 			foreach(var item in itens)
 			{
 				Console.WriteLine();
 				Console.WriteLine($"ID = #{item.id}");
 				Console.WriteLine($"NOME = {item.nome}");
-				Console.WriteLine($"RECEITA = R${item.receita}");
+
+				double receita = double.Parse(item.receita);
+
+				Console.WriteLine($"RECEITA = R${receita}");
+
+				str_f += $"ID = #{item.id}";
+				str_f += $" RECEITA = R${receita}";
+				str_f += '\n';
 			}
+
+			File.WriteAllText("./saida.txt", str_f);
 		}
 
 		public static void ExtractKeyZero ()
 		{
 			string str = File.ReadAllText("./teste.json");
 
-			var jf = JsonSerializer.Deserialize<OrderJson>(str);
-
-			var jd = JsonSerializer.Deserialize<Dictionary<string, object>>(jf.orders[0]);
+			OrderJson jf = JsonSerializer.Deserialize<OrderJson>(str);
+			Dictionary<string,object> jd = JsonSerializer.Deserialize<Dictionary<string,object>>(jf.orders[0]);
 
 			foreach(var kvp in jd)
 			{
@@ -70,6 +88,6 @@ namespace JsonExtrator
 	{
 		public int id { get; set; }
 		public string nome { get; set; }
-		public int receita { get; set; }
+		public string receita { get; set; }
 	}
 }

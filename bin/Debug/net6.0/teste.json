@@ -4,21 +4,21 @@
       "pedido2306478": {
         "id": 456597,
         "nome": "bruninho",
-	"receita": 2300
+	"receita": "2300.500"
       }
     },
     {
       "pedido234579658": {
         "id": 689583,
         "nome": "ErreDê",
-	"receita": 26700
+	"receita": "26700.081"
       }
     },
     {
       "pedido566789478": {
         "id": 457495,
         "nome": "Magnos",
-	"receita": 160
+	"receita": "160.455"
       }
     }
   ]
